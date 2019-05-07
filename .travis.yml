@@ -1,0 +1,8 @@
+language: node_js
+before_script:
+- git config user.name "Chielo Newctle"
+- git config user.email "ChieloNewctle@Yandex.com"
+- sed -i'' "s~git@github.com:chielonewctle/chielonewctle.github.io.git~https://${GITHUB_ACCESS_TOKEN}@github.com/chielonewctle/chielonewctle.github.io.git~" _config.yml
+script:
+- hexo generate
+- hexo deploy
