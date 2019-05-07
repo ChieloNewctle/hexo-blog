@@ -1,3 +1,4 @@
 [submodule "themes/minos"]
 	path = themes/minos
-	url = https://github.com/ChieloNewctle/hexo-theme-minos.git
+	url = https://github.com/ChieloNewctle/hexo-theme-minos
+    branch = chielo
