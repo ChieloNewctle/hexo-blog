@@ -3,6 +3,7 @@ branches:
   - master
 
 language: node_js
+node_js: --lts
 
 install:
 - npm install hexo-cli -g
