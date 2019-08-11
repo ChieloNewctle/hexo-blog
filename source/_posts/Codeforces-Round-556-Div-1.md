@@ -8,11 +8,13 @@ portal_link: https://codeforces.com/contest/1149/
 
 | 题目 | A | B | C | D | E |
 | ---- | - | - | - | - | - |
-| 状况 | AC+0 | AC+1 | 待补 | 没看 | 没看 |
+| 状况 | AC+0 | AC+1 | 已补 | 待补 | 没看 |
 
 涨分了，终于有点橙汁的颜色了。（我好菜呀）
 
 <!-- more -->
+
+<!-- toc -->
 
 
 ### A. Prefix Sum Primes
@@ -62,7 +64,10 @@ portal_link: https://codeforces.com/contest/1149/
 
 ### C. Tree Generator™
 
-*待补*
+比赛时实际想到、也查到了，使用DFS序类似的动态维护树的深度等信息。<!--
+-->但是没有想到维护直径的方式（有点菜）。补一下。
+
+
 
 
 ### D. Abandoning Roads

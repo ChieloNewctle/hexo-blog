@@ -3,11 +3,18 @@ title: 奇技淫巧
 date: 2018-11-02
 ---
 
-很多遇到的奇奇怪怪的数学性质、结论等都记录在这里。
+很多遇到的问题、技巧、奇奇怪怪的数学性质、结论等都记录在这里。
 
 <!-- more -->
 
 <!-- toc -->
+
+# 开发相关
+
+- GCC 和 G++ 的 `-Wall` 实际并没有打开 `variable shadow` 的 warning，**一定一定**记住加上 `-Wshadow`。`variable shadow` 虽然是不常见的错误，但是非常容易漏掉。
+
+- C++ 17 增加了 `std::string_view` （C++ 14 虽然没有，但是有 `std::experimental::string_view` 在 `experimental/string_view` 中），其子串只需要常数级别的空间，并有内建的 `std::hash` 支持。
+
 
 # 数论 (or 数字)
 
