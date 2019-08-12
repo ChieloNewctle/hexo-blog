@@ -11,7 +11,7 @@ date: 2018-11-02
 
 # 开发相关
 
-- GCC 和 G++ 的 `-Wall` 实际并没有打开 `variable shadow` 的 warning，**一定一定**记住加上 `-Wshadow`。`variable shadow` 虽然是不常见的错误，但是非常容易漏掉。
+- 我受够了这个明知道我写了一堆 Bugs 却什么都不讲的编译器。我要撬开它的嘴让他会说多说点：`-Wall -Wextra -Wshadow -Wconversion -Weffc++`。
 
 - C++ 17 增加了 `std::string_view` （C++ 14 虽然没有，但是有 `std::experimental::string_view` 在 `experimental/string_view` 中），其子串只需要常数级别的空间，并有内建的 `std::hash` 支持。
 
