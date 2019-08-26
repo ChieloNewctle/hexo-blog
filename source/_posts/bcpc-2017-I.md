@@ -3,7 +3,7 @@ title: BCPC2017 决赛 I. 夜晚的街区
 date: 2017-12-19
 category: 题解
 tags: [BCPC, DFS, 二进制, 哈希表, 暴力]
-portal_link: https://buaacoding.cn/problem/1120/index
+portal_link: https://accoding.cn/problem/1120/index
 ---
 出题: Chielo, 验题: skywalkert。
 

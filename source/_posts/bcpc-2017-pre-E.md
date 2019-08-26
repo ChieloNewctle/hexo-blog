@@ -3,7 +3,7 @@ title: BCPC2017 预赛 E. 气球派对
 date: 2017-12-18
 category: 题解
 tags: [BCPC, 二分图, Kőnig 定理]
-portal_link: https://buaacoding.cn/problem/954/index
+portal_link: https://accoding.cn/problem/954/index
 ---
 出题: Chielo, 验题: chitanda。
 
