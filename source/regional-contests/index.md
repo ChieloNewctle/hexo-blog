@@ -22,6 +22,13 @@ const regions = [
 
 var contests = [];
 
+function safeDate(d) {
+    if(d === undefined) {
+        return 'to be determined';
+    }
+    return d;
+}
+
 function generateTable() {
     if(contests.length != regions.length) {
         return;
@@ -35,8 +42,8 @@ function generateTable() {
         let contest = contests[i];
         let line = '<tr>';
         line += '<td><a href="' + finder_base_url + contest.url_name + '">' + contest.name + '<a/></td>';
-        line += '<td>' + contest.startDate + '</td>';
-        line += '<td>' + contest.endDate + '</td>';
+        line += '<td>' + safeDate(contest.startDate) + '</td>';
+        line += '<td>' + safeDate(contest.endDate) + '</td>';
         line += '</tr>';
         table += line;
     }
