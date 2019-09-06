@@ -7,6 +7,7 @@ date: 2019-09-05
 
 <script>
 const base_url = 'https://icpc.baylor.edu/cm5-contest-rest/rest/contest/public/';
+const finder_base_url = 'https://icpc.baylor.edu/regionals/finder/';
 
 const regions = [
     'AR-Nannjing-2019',
@@ -33,23 +34,24 @@ function generateTable() {
     for(let i in contests) {
         let contest = contests[i];
         let line = '<tr>';
-        line += '<td>' + contest.name + '</td>';
+        line += '<td><a href="' + finder_base_url + contest.url_name + '">' + contest.name + '<a/></td>';
         line += '<td>' + contest.startDate + '</td>';
         line += '<td>' + contest.endDate + '</td>';
         line += '</tr>';
         table += line;
     }
-    table += '</table>'
-    $('#contest-list').html(table)
+    table += '</table>';
+    $('#contest-list').html(table);
 }
 
 async function getContest(name) {
     $.get(base_url + name, (data) => {
-        contests.push(data)
-        generateTable()
-    })
+        data.url_name = name;
+        contests.push(data);
+        generateTable();
+    });
 }
 
-regions.map(getContest)
+regions.map(getContest);
 </script>
 
