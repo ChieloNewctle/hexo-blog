@@ -56,6 +56,6 @@ portal_links:
 类似于已知某个点是黒棋子，然后根据已知情况去递归放空位置的黑白棋子，以避免后续错放成黒的。
 
 
-## 标程
+## 代码
 
 [UVALive 7191 - ISAP](/assets/src/uvalive/7191/i.cpp)
