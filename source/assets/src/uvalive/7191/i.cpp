@@ -1,3 +1,6 @@
+// Chielo Newctle
+// https://chielonewctle.github.io/2019/09/08/changchun-regional-2015-chess-puzzle/
+
 #include <bits/stdc++.h>
 
 typedef long long ll;
