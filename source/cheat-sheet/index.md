@@ -12,13 +12,19 @@ date: 2018-11-02
 # Coding 相关
 
 - 时常遭受 Runtime Error？或者时常会写一些奇奇怪怪的小错误？来让编译器帮你看看：
-	+ [Catching silly mistakes with GCC - Codeforces](https://codeforces.com/blog/entry/15547)
-	+ [Program Instrumentation Options - GCC](https://gcc.gnu.org/onlinedocs/gcc/Instrumentation-Options.html)
-	+ `-Wall -Wextra -Wshadow -Wconversion -Wfloat-equal -Wlogical-op -Wformat=2 -Wshift-overflow=2 -pedantic -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -D_FORTIFY_SOURCE=2 -fsanitize=address -fsanitize=undefined -fno-sanitize-recover=all`
-	+ `-fno-sanitize-recover=all` 用来保证对拍的时候，遇到 sanity 问题时会之间带着 error code 结束。
-	+ 可以把这些写成 bashrc 的一个函数：```bash
+    + [Catching silly mistakes with GCC - Codeforces](https://codeforces.com/blog/entry/15547)
+    + [Program Instrumentation Options - GCC](https://gcc.gnu.org/onlinedocs/gcc/Instrumentation-Options.html)
+    + `-Wall -Wextra -Wshadow -Wconversion -Wfloat-equal -Wlogical-op -Wformat=2 -Wshift-overflow=2 -pedantic -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -D_FORTIFY_SOURCE=2 -fsanitize=address -fsanitize=undefined -fno-sanitize-recover=all`
+    + `-fno-sanitize-recover=all` 用来保证对拍的时候，遇到 sanity 问题时会之间带着 error code 结束。
+    + 可以把这些写成 bashrc 的一个函数：
+```bash
 ccc() {
-    g++ -std=c++17 -Wall -Wextra -Wshadow -Wconversion -Wfloat-equal -Wlogical-op -Wformat=2 -Wshift-overflow=2 -pedantic -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -D_FORTIFY_SOURCE=2 -fsanitize=address -fsanitize=undefined -fno-sanitize-recover=all -g "$@" -o ${1/\.cpp/}
+    g++ -std=c++17 -Wall -Wextra -Wshadow -Wconversion \
+        -Wfloat-equal -Wlogical-op -Wformat=2 -Wshift-overflow=2 \
+        -pedantic -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC \
+        -D_FORTIFY_SOURCE=2 -fsanitize=address \
+        -fsanitize=undefined -fno-sanitize-recover=all \
+        -g "$@" -o ${1/\.cpp/}
 }
 ```
 
