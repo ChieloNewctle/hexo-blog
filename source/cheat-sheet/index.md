@@ -1,5 +1,5 @@
 ---
-title: 奇技淫巧
+title: 技巧
 date: 2018-11-02
 ---
 
@@ -15,7 +15,7 @@ date: 2018-11-02
     + [Catching silly mistakes with GCC - Codeforces](https://codeforces.com/blog/entry/15547)
     + [Program Instrumentation Options - GCC](https://gcc.gnu.org/onlinedocs/gcc/Instrumentation-Options.html)
     + `-Wall -Wextra -Wshadow -Wconversion -Wfloat-equal -Wlogical-op -Wformat=2 -Wshift-overflow=2 -pedantic -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -D_FORTIFY_SOURCE=2 -fsanitize=address -fsanitize=undefined -fno-sanitize-recover=all`
-    + `-fno-sanitize-recover=all` 用来保证对拍的时候，遇到 sanity 问题时会之间带着 error code 结束。
+    + `-fno-sanitize-recover=all` 用来保证对拍过程中，遇到 sanity 问题时，就直接带着 error code 结束。
     + 可以把这些写成 bashrc 的一个函数：
 ```bash
 ccc() {
