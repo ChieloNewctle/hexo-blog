@@ -3,7 +3,7 @@ title: 'The 16th Zhejiang Provincial Collegiate Programming Contest'
 date: 2020-04-12
 category: 训练记录
 tags: [算法, 训练]
-portal_link: vjudge.net/contest/367735
+portal_link: https:://vjudge.net/contest/367735
 ---
 
 队伍训练，个人做了 G, F, H, C, D，都是不难写的，还是菜……
